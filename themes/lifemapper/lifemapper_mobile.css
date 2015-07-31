@@ -1,0 +1,516 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name: Lifemapper
+Theme URI: http://lifemapper.org
+Description: This is a unique theme created for Lifemapper.org for mobile devices.
+Author: Spears Consulting
+Version: 1 
+*/
+
+html {
+   background: #819abd;
+   margin:0;
+   padding:0;
+}
+
+body { 
+   margin: 0 auto;
+   padding: 0;
+   background: url(images/bg_dark.png) no-repeat center top;
+   height: 100%;
+   width: 100%;
+   display:table;
+}
+
+#wrapper {
+   margin:0 auto;
+   padding:0;
+   width: 96%;
+}
+
+#header  {
+   margin:0;
+   padding:0;
+   width:96%;
+   position:static;
+}
+
+#header img {
+   margin-top:10px;
+   padding-right:0;
+   margin-left:5px;
+}
+ 
+#header form {
+   position:static;
+   margin-right:12px;
+}
+
+#separator {
+   background-color:#FFFFFF;
+   height:8px;
+}
+
+h1 {
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size: 28px;
+   font-weight: bold;
+   color: #194168;
+}
+
+#nav_menu {
+   margin-left:15px;
+   padding:0;
+   margin-top:10px;
+   width:100%;
+}
+
+#nav_menu ul {
+   margin:0;
+   padding:0;
+   vertical-align:top;
+}
+
+#nav_menu li {
+   width:75%;
+   height:16px;
+   vertical-align:top;
+   line-height:16px;
+   color:#194168;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size:13px;
+}
+
+#nav_menu li.current_page_item a {
+   margin:0;
+   padding:0;
+   width:100%;
+   vertical-align:top;
+   line-height:16px;
+   color:#254161;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size:13px;
+   font-weight:400;
+   font-weight:bold;
+}
+
+#nav_menu li.current_page_ancestor a {
+   width:75%;
+   vertical-align:top;
+   line-height:16px;
+   color:#254161;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size:13px;
+   font-weight:300;
+   font-weight:bold;
+}
+
+#nav_menu a {
+   width:75%;
+   line-height:16px;
+   margin:0;
+   text-decoration: none;
+   font-size:13px;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   color:#39587C;
+   font-weight:100; 
+}
+ 
+#nav_menu a:link { 
+   color: #39587C; 
+   text-decoration: none; 
+}
+	
+#nav_menu a:hover { 
+   color: #254161; 
+   text-decoration: underline; 
+   font-weight:200; 
+}
+
+#container {
+   width:98%;
+   margin:0;
+}
+
+#home1 {
+   margin-left: auto ;
+   margin-right: auto ;
+   padding:15px;
+   margin-top:5px;
+   margin-bottom:5px;
+   width:90%;
+   background-color:#fff;
+}
+
+#image1 {
+   background-image:url(images/owl.png);
+   background-repeat:no-repeat;
+   background-position:center; 
+   height:72px;
+}
+
+#image2 {
+   background-image:url(images/jars.png);
+   background-repeat:no-repeat;
+   background-position:center; 
+   height:72px;
+}
+
+#image3 {
+   background-image:url(images/map.png);
+   background-repeat:no-repeat;
+   background-position:center; 
+   height:72px;
+}
+
+#home2 {
+   margin-left: auto ;
+   margin-right: auto ;
+   padding:15px;
+   margin-top:5px;
+   margin-bottom:5px;
+   width:90%;
+   background-color:#fff;
+}
+
+#home3 {
+   margin-left: auto ;
+   margin-right: auto ;
+   padding:15px;
+   margin-top:5px;
+   margin-bottom:5px;
+   width:90%;
+   background-color:#fff;
+}
+
+#green_box {
+   width:810px;
+   min-height:480px;
+   margin-top:15px;
+   padding: 25px 25px 25px 25px;
+   background-color:#BDCDE5;
+   opacity:0.9;
+   filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#sidebarx {
+   margin-top:5px;     
+   padding: 5px 10px 10px 10px;
+   background-color:#fff;
+   width:94%;
+   -webkit-box-shadow: 5px 5px 5px #1A375B; /* Safari and Chrome */
+   -moz-box-shadow: 1px 2px 2px 1px #1A375B;
+   -webkit-box-shadow: 1px 2px 2px 1px #1A375B;
+   box-shadow: 1px 2px 2px 1px #1A375B;
+}
+ 
+#sidebarx h5 {
+   margin-top:5px;
+   margin-bottom:4px;
+   font-weight:bold;
+   font-size:16px;
+   color: #2E4E6D;
+}
+
+#sidebarx li.current_page_item a {
+   font-weight:bold;
+}
+
+#sidebarx ul li.page_item li.current_page_item a {
+   font-weight:bold;
+}
+
+#sidebarx ul ul li.page_item li.current_page_item a {
+   font-weight:bold;
+}
+
+#sidebarx ul li.current_page_item li.page_item a {
+   font-weight:100;
+}
+
+#sidebarx ul ul li.current_page_item li.page_item a {
+   font-weight:100;
+}
+
+#sidebarx ul li.page_item a:hover { 
+   color: #fff; 
+   text-decoration: underline; 
+   font-weight:bold; 
+}
+
+#sidebarx ul ul li.page_item a:hover { 
+   color: #000; 
+   text-decoration: underline; 
+   font-weight:bold; 
+}
+
+.children a {
+   font-weight:100;
+   font-size:12px;
+}
+
+#sidebarx ul {
+   padding: 0;
+   margin: 0;
+}
+
+#sidebarx ul a {
+   color:#fff;
+   font-size:12px;
+   display:block;
+   height:19px;
+   width:90%px;
+   margin-bottom:5px;
+   margin-top:5px;
+   padding:5px 0 0 7px;
+   background-color:#194168;
+   background-color:#194168;
+   border-radius: 0 15px 15px 0; 
+   -moz-border-radius: 0 15px 15px 0; 
+   -webkit-border-radius: 0 15px 15px 0; 
+}
+
+#sidebarx ul ul {
+   margin-left:12px;
+   background-color:#fff;
+}
+
+
+#sidebarx li {
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   color:#166632;
+   font-size:14px;
+   list-style-type: none;
+}
+
+#sidebarx ul ul a {
+   background-color:#fff;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   margin: 0;
+   display:inline;
+   color:#166632;
+   font-size:12px;
+   line-height:14px;
+   padding: 1px 0 0 3px;
+   border-radius: 0; 
+   -moz-border-radius: 0; 
+   -webkit-border-radius: 0; 
+}
+
+#sidebarx ul a:link { 
+   color: #fff; 
+   text-decoration: none; 
+}
+	
+#sidebarx ul a:hover { 
+   color: #fff; 
+   text-decoration: underline; 
+   font-weight:bold; 
+}
+
+#sidebarx ul ul a:link { 
+   color: #000; 
+   text-decoration: none; 
+}
+
+
+#sidebarx ul ul a:visited { 
+   color: #000; 
+   font-weight:bold; 
+}
+
+#content {
+   margin-top:5px;
+   padding: 5px 10px 10px 10px;
+   background-color:#fff;
+   width:94%;
+   -webkit-box-shadow: 5px 5px 5px #1A375B; /* Safari and Chrome */
+   -moz-box-shadow: 1px 2px 2px 1px #1A375B;
+   -webkit-box-shadow: 1px 2px 2px 1px #1A375B;
+   box-shadow: 1px 2px 2px 1px #1A375B;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   line-height:13px;
+   color: #000;
+   text-align:left;
+   padding-bottom:5px;
+}
+ 
+#content td {
+   text-align:center;
+}
+
+#content p img {
+   width:100%;
+   height:100%;
+}
+
+#content td p {
+   text-align:center;
+   line-height:14px;
+   padding-bottom:0;
+}
+
+#content ul {
+   margin:10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   padding: 0px;
+}
+
+h2 {
+   font-size: 16px;
+   margin:15px, 0, 0, 0;
+   font-weight: bold;
+   color:#1A375B;
+   padding:0px 0px 8px 0px;
+   text-align:left;
+   font-style:italic;
+   line-height:20px;
+}
+
+h3 {
+   font-size: 18px;
+   font-weight: bold;
+   color:#1A375B;
+   font-style:italic;
+   text-align:center
+}
+	
+h5 {
+   font-size: 14px;
+   font-weight: bold;
+   color: #000000; 
+}
+
+h6 {
+   font-size: 10px;
+   font-weight: bold;
+   color: #1A375B; 
+}
+
+p {
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   line-height:17px;
+   color: #000;
+   text-align:left;
+   padding-bottom:5px;
+}
+
+a {	
+   margin: 0;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   line-height:13px;
+   color: #1A375B;
+   text-align:left;
+}
+
+
+.indent {
+   padding-left:25px;
+}
+	
+.clear {
+   height:0;
+   visibility: hidden;
+   display:block;
+   clear: both;
+}
+
+#form h3 {
+   font-size: 12px;
+   line-height: 12px;
+   font-weight: bold;
+   color:#1A375B;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+}
+	
+input {
+   margin-left: 5px;
+}
+
+input+input {
+   margin-left: 1em;
+}
+
+#pdf {
+   margin:0; padding:2px;
+   border:1px solid #b2b2b2;
+   margin-top:5px;
+}
+
+#pdf a {
+   color: #1A375B; 
+   text-decoration: none; 
+}
+
+#pdf a:hover {
+   color: #1A375B; 
+   text-decoration: underline; 
+}
+
+
+#pdf a:visited {
+   color: #1A375B; 
+   text-decoration: none; 
+}
+
+.bold {
+   font-weight:bold;
+}
+
+
+#footer {
+   margin:0 auto;
+   padding:0;
+   height:220px;
+   width:96%;
+   position:static;
+}
+
+#footer p {
+   color: #ffffff;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size:10px;
+   text-align:center;
+   margin:0;
+   padding-top:20px;
+}
+
+#footer a {
+   text-align:center;
+   vertical-align:top;
+   color: #ffffff;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   margin:0;
+   padding:0;
+}
+
+#footer h3 {
+   font-weight:400;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   color:#ffffff;
+   font-size:14px;
+   font-stretch:extra-expanded;
+   margin:0;
+   padding:0;
+}
+
+#footerLinks {
+   margin:0; padding:0;
+   font-family:Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
+   font-size:10px;
+   color:#999;
+   clear:both;
+}
+

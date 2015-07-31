@@ -1,0 +1,1277 @@
+/*
+   @name: services.css
+   @author: CJ Grady
+   @summary: CSS file for web service output
+*/
+
+/* ========================================================================= */
+/* =                                Globals                                = */
+/* ========================================================================= */
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                Anchors                                = */
+/* ========================================================================= */
+
+
+#services { 
+   margin-top: 8px; 
+   margin-left: 15px; 
+   margin-right: 15px; 
+   padding: 20px 20px 10px 20px; 
+   background-color: rgb(255, 255, 255); 
+   width: 960px;
+   min-height: 349px; 
+   float: right; 
+   box-shadow: 1px 2px 2px 1px rgb(26, 55, 91); 
+   font-family: Myriad Pro,Verdana,Arial,Helvetica,sans-serif; 
+   font-size: 16px; 
+   font-weight: normal; 
+   line-height: 22px;  
+   text-align: left; 
+}
+
+
+#services th {
+   font-weight: bold; 
+   font-size: 16px;
+   line-height: 22px;
+   color:#194168; 
+}
+
+.pageName {
+   font-size: 20px;
+   font-weight: bold;
+   color:#1A375B;
+   text-align:left;
+   font-style:italic;
+   line-height:65px;
+}
+
+/*
+@this area is taken from CJ's reset.css
+*/
+
+
+#services caption,th
+{
+   text-align: left;
+}
+
+#services input,textarea
+{
+   margin: 0;
+   padding: 0;
+}
+
+#services ol,ul
+{
+   list-style: none;
+}
+
+#services q:before,q:after
+{
+   content: '';
+}
+
+#servics table
+{
+   border-collapse: collapse;
+   border-spacing: 0;
+   width: 100%;
+}
+
+
+a.atomLink
+   /*
+   @summary: Format link for atom interface
+   */
+{
+   border: solid 1px #1e3966;
+   color: #1e3966;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.csvLink
+   /*
+   @summary: Format link for csv interface
+   */
+{
+   border: solid 1px #651a46;
+   color: #651a46;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.emlLink
+   /*
+   @summary: Format link for eml interface
+   */
+{
+   border: solid 1px #651a46;
+   color: #651a46;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.jsonLink
+   /*
+   @summary: Format link for json interface
+   */
+{
+   border: solid 1px #700500;
+   color: #700500;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.kmlLink
+   /*
+   @summary: Format link for kml interface
+   */
+{
+   border: solid 1px #1e6266;
+   color: #1e6266;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.link
+   /*
+   @summary: Link to an individual service item
+   */
+{
+   display: block;
+}
+
+a.packageLink
+   /*
+   @summary: Format link for model packages
+   */
+{
+   border: solid 1px #666699;
+   color: #666699;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.pageLink
+   /*
+   @summary: Link to a page of results
+   */
+{
+   text-decoration: none;
+}
+
+a.rawLink
+   /*
+   @summary: Format link for raw interface
+   */
+{
+   border: solid 1px #125018;
+   color: #125018;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.shapefileLink
+   /*
+   @summary: Format link for shapefile interface
+   */
+{
+   border: solid 1px #734406;
+   color: #734406;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.statusLink
+   /*
+   @summary: Format link for shapefile interface
+   */
+{
+   border: solid 1px #5345c4;
+   color: #5345c4;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.tiffLink
+   /*
+   @summary: Format link for tiff interface
+   */
+{
+   border: solid 1px #5345c4;
+   color: #5345c4;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.wcsLink
+   /*
+   @summary: Format link for wcs interface (wrapper)
+   */
+{
+   border: solid 1px #c05303;
+   color: #c05303;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.wfsLink
+   /*
+   @summary: Format link for wfs interface (wrapper)
+   */
+{
+   border: solid 1px #cbcd08;
+   color: #cbcd08;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.wmsLink
+   /*
+   @summary: Format link for wms interface (wrapper)
+   */
+{
+   border: solid 1px #16c82b;
+   color: #16c82b;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+a.xmlLink
+   /*
+   @summary: Format link for xml interface
+   */
+{
+   border: solid 1px #16c8b9;
+   color: #16c8b9;
+   font-size: 8pt;
+   font-weight: bold;
+   padding: 3px;
+   text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                 Divs                                  = */
+/* ========================================================================= */
+div.lmCalendar
+   /*
+   @summary: Container for Lifemapper calendars
+   */
+{
+   display: block;
+}
+
+div.queryFilters
+   /*
+   @summary: Contains a form with query parameters for the listing service
+   */
+{
+   display: block;
+   padding-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                Images                                 = */
+/* ========================================================================= */
+img.expProjImg
+   /*
+   @summary: Contains WMS image for a projection
+   */
+{
+   border: solid 1px #000000;
+   background-color: #ffffff;
+   vertical-align: baseline;
+}
+
+img.layerImage
+   /*
+   @summary: Layer WMS image
+   */
+{
+   border: solid 1px #000000;
+   vertical-align: baseline;
+}
+
+img.occSetImg
+   /*
+   @summary: Occurrence set WMS image
+   */
+{
+   border: solid 1px #000000;
+   height: 200px;
+   width: 400px;
+   vertical-align: baseline;
+}
+
+img.projImg
+   /*
+   @summary: Projection WMS image
+   */
+{
+   border: solid 1px #000000;
+   vertical-align: baseline;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                 Lists                                 = */
+/* ========================================================================= */
+/* List Item Elements                                                        */
+/* ----------------------------                                              */
+li.formatLink
+   /*
+   @summary: List item that will contain a link to another format for the 
+                particular item or items
+   */
+{
+   display: inline;
+   padding: 2px;
+}
+
+li.pageLi
+   /*
+   @summary: List item that will contain a page link
+   */
+{
+   display: inline;
+   padding: 6px;
+}
+
+li.scenKeyword
+   /*
+   @summary: List item for a keyword for a scenario
+   */
+{
+   padding-left: 20px;
+}
+
+li.scenLayer
+   /*
+   @summary: List item for a scenario layer
+   */
+{
+   padding-left: 20px;
+}
+
+
+/* Ordered List Elements                                                     */
+/* ----------------------------                                              */
+
+/* Unordered List Elements                                                   */
+/* ----------------------------                                              */
+ul.formatsList
+   /*
+   @summary: Unordered list of available formats for an item or list of items
+   */
+{
+   display: inline;
+   padding-left: 20px;
+}
+
+ul.pages
+   /*
+   @summary: Unordered list of links to pages of items
+   */
+{
+   display: inline;
+   padding-left: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                 Spans                                 = */
+/* ========================================================================= */
+span.algorithmCode
+   /*
+   @summary: Span displaying the algorithm code when an algorithm parameter set
+                is displayed
+   */
+{
+   display: block;
+   font-size: 14pt;
+   padding-top: 5px;
+   color: #194168;
+   font-weight: bold;
+}
+
+span.algorithmParameter
+   /*
+   @summary: Each of these spans contains an algorithm parameter name and value
+   */
+{
+   display: block;
+   padding-left: 30px;
+
+}
+
+span.algorithmParameters
+   /*
+   @summary: Span containing all of the parameters for a particular algorithm
+   */
+{
+   display: block;
+   padding-bottom: 10px;
+   padding-top: 5px;
+   color: #194168;
+   font-weight: bold;
+}
+
+span.atomAuthor
+   /*
+   @summary: Span displaying the author of an atom feed
+   */
+{
+   display: block;
+}
+
+span.atomEntryId
+   /*
+   @summary: Span displaying an atom entry id
+   */
+{
+   display: block;
+}
+
+span.atomEntryTitle
+   /*
+   @summary: Span displaying an atom entry title
+   */
+{
+   display: block;
+   font-size: 15pt;
+}
+
+span.atomId
+   /*
+   @summary: Span displaying an atom entry id
+   */
+{
+   display: block;
+}
+
+span.atomTitle
+   /*
+   @summary: Span displaying an atom feed title
+   */
+{
+   display: block;
+   font-size: 20pt;
+}
+
+span.countParameter
+   /*
+   @summary: Contains a parameter used to generate the current count
+   */
+{
+   display: block;
+   padding-left: 10px;
+}
+
+span.countParametersUsed
+   /*
+   @summary: Contains the url parameters used to generate the current count
+   */
+{
+   display: block;
+   padding-top: 10px;
+}
+
+span.errorHeader
+   /*
+   @summary: Header for an error message
+   */
+{
+   display: block;
+   font-weight: bold;
+   padding: 5px;
+}
+
+span.errorMessage
+   /*
+   @summary: Error message container
+   */
+{
+   display: block;
+   padding-left: 30px;
+}
+
+span.expModelAlgoCode
+   /*
+   @summary: Container for the algorithm code of the model associated with an 
+                experiment
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expModelHeader
+   /*
+   @summary: Header for an experiment's model
+   */
+{
+   display: block;
+    color: #194168;
+   font-weight: bold;
+}
+
+span.expModelLink
+   /*
+   @summary: Contains a link to the meta interface for the experiment's model
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expModelModTime
+   /*
+   @summary: Contains the modification time of an experiment's model
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expModelOccLink
+   /*
+   @summary: Contains a link to the meta interface for the experiment's model's
+                occurrence set
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expModelSpeciesName
+   /*
+   @summary: Contains the display name of the occurrence set used to generate 
+                the model
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expModelStatus
+   /*
+   @summary: Contains the status of the experiment's model
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.expProjHeader
+   /*
+   @summary: Header for the list of an experiment's projections
+   */
+{
+   display: block;
+   padding-top: 10px;
+   color: #194168;
+   font-weight: bold;
+}
+
+span.expProjLink
+   /*
+   @summary: Container for a link to an experiment's projection
+   */
+{
+   display: block;
+}
+
+span.expProjScnCode
+   /*
+   @summary: Contains the scenario code of a projection
+   */
+{
+   display: block;
+   padding-left: 20px;
+}
+
+span.interfaces
+   /*
+   @summary: Header for list of available formats for an item or list of items
+   */
+{
+   display: inline;
+   padding-bottom: 25px;
+   padding-top: 5px;
+   color: #194168;
+}
+
+span.itemCount
+   /*
+   @summary: Span containing the number of items returned
+   */
+{
+   display: block;
+   padding-top: 10px;
+}
+
+span.itemsTitle
+   /*
+   @summary: Span containing a title
+   */
+{
+   display: block;
+   font-size: 20pt;
+   padding-bottom: 15px;
+   text-align: left;
+}
+
+span.layerBbox
+   /*
+   @summary: Contains the bounding box for the layer
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerGuid
+   /*
+   @summary: Contains the layer's guid
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerModTime
+   /*
+   @summary: Contains the layer modification time
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerResolution
+   /*
+   @summary: Contains the layer resolution
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerTitle
+   /*
+   @summary: Contains the title of a layer
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerMaxVal
+   /*
+   @summary: Contains the maximum value of a layer
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.layerMinVal
+   /*
+   @summary: Contains the minimum value of a layer
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modTime
+   /*
+   @summary: The span contained in the table data element holding the 
+                modification time of an element in a list of elements.
+   */
+{
+   display: block;
+}
+
+span.layerNoDataVal
+   /*
+   @summary: Contains the no data value of a layer
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelAlgorithmCode
+   /*
+   @summary: Contains the code of the algorithm used to generate the model
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelBbox
+   /*
+   @summary: Contains the model's bounding box
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelDisplayName
+   /*
+   @summary: Contains the display name of the model's occurrence set
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelModTime
+   /*
+   @summary: Contains the modification time of the model
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelScenarioCode
+    /*
+    @summary: Contains the code of the scenario used to generate the model
+    */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.modelStatus
+   /*
+   @summary: Contains the status of the model
+   */
+{
+   display: block;
+   padding: 5px;
+}
+
+span.occSetBbox
+   /*
+   @summary: Contains the occurrence set bounding box
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.occSetCount
+   /*
+   @summary: Contains the count of the points in an occurrence set
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.occSetDisplayName
+   /*
+   @summary: Contains the occurrence set display name
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.occSetModTime
+   /*
+   @summary: Contains the occurrence set modification time
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projBbox
+   /*
+   @summary: Contains a projection's bounding box
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projDisplayName
+   /*
+   @summary: Contains a projection's display name
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projGuid
+   /*
+   @summary: Contains a projection's guid
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projModTime
+   /*
+   @summary: Contains the modification time of a projection
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projResolution
+   /*
+   @summary: Contains the projection's resolution
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projScenarioCode
+   /*
+   @summary: Contains a projection's scenario's code
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projStatus
+   /*
+   @summary: Contains the status of the projection
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.projUnits
+   /*
+   @summary: Contains the units used by the projection
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.queryFiltersLabel
+   /*
+   @summary: Label for optional query filters in listing service
+   */
+{
+   display: block;
+   font-size: 13pt;
+   font-weight: bold;
+}
+
+span.scenBbox
+   /*
+   @summary: Contains a scenario's bounding box
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenEndDate
+   /*
+   @summary: Contains the scenario's end date
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenGuid
+   /*
+   @summary: Contains the scenario's guid
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenKeywords
+   /*
+   @summary: Contains the scenario's keywords
+   */
+{
+   display: block;
+   padding-top: 5px;
+}
+
+span.scenLastModified
+   /*
+   @summary: Contains the scenario's modification time
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenLayers
+   /*
+   @summary: Contains the scenario's layers
+   */
+{
+   display: block;
+   padding-top: 5px;
+}
+
+span.scenResolution
+   /*
+   @summary: Contains the scenario's resolution
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenScenarioCode
+   /*
+   @summary: Contains the scenario's code
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenStartDate
+   /*
+   @summary: Contains the scenario's start date
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenTitle
+   /*
+   @summary: Contains the scenario's title
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.scenUnits
+   /*
+   @summary: Contains the scenario's units
+   */
+{
+   display: block;
+   padding: 2px;
+}
+
+span.serviceDescription
+   /*
+   @summary: Contains documentation describing the service
+   */
+{
+   color: #000099;
+   padding-left: 10px;
+}
+
+span.serviceHelpLink
+   /*
+   @summary: Container for a help link for a service
+   */
+{
+   display: block;
+   padding-bottom: 50px;
+   padding-left: 25px;
+}
+
+span.serviceUrl
+   /*
+   @summary: Container for a link to a service
+   */
+{
+   display: block;
+}
+
+span.title
+   /*
+   @summary: The span contained in the table data element containing the title 
+                of the list of items returned by the listing service.
+   */
+{
+   display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ========================================================================= */
+/* =                                Tables                                 = */
+/* ========================================================================= */
+/* Table Elements                                                            */
+/* -----------------------------                                             */
+table.expProjTable
+   /*
+   @summary: Table containing information about an experiment's projections
+   */
+{
+   border: solid 1px #000000;
+   border-collapse: collapse;
+}
+
+table.items
+   /*
+   @summary: Table containing items returned by a listing service
+   */
+{
+   border: solid 1px #000000;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+table.layerServiceTable
+   /*
+   @summary: Table containing layer information
+   */
+{
+   border-collapse: collapse;
+}
+
+table.mainBody
+   /*
+   @summary: Table containing the main body of content for a particular page
+   */
+{
+   width: 100%;
+}
+
+table.occSetPoints
+   /*
+   @summary: Table containing points for an occurrence set
+   */
+{
+   border: solid 1px #000000;
+   border-collapse: collapse;
+}
+
+table.projectionTable
+   /*
+   @summary: Table for projection information
+   */
+{
+   border-collapse: collapse;
+}
+
+
+/* Table Data Elements                                                       */
+/* -----------------------------                                             */
+td.expProjImg
+   /*
+   @summary: Contains an image if the projection has been completed, or it's 
+                status if it has not
+   */
+{
+   padding: 10px;
+}
+
+td.expProjLink
+   /*
+   @summary: Contains a link to one of an experiment's projections
+   */
+{
+   padding: 10px;
+   vertical-align: top;
+}
+
+td.item
+   /*
+   @summary: Class used for table data elements used by the listing services
+   */
+{
+   border: solid 1px #000000;
+   padding: 5px;
+}
+
+td.layerImageTD
+   /*
+   @summary: Container for a WMS image of a layer
+   */
+{
+   padding: 20px;
+}
+
+td.layerMetaTD
+   /*
+   @summary: Table data element containing layer metadata
+   */
+{
+   padding: 20px;
+   vertical-align: top;
+}
+
+td.mainBody
+  /*
+  @summary: Main page content will go in this table data element
+  */
+{
+   width: 70%;
+}
+
+td.occSetImg
+   /*
+   @summary: Container for occurrence set image
+   */
+{
+   padding: 10px;
+}
+
+td.occSetMetaData
+   /*
+   @summary: Contains occurrence set metadata
+   */
+{
+   padding: 10px;
+   vertical-align: top;
+}
+
+td.occSetPointsData
+   /*
+   @summary: Table data elements for occurrence set points
+   */
+{
+   border: solid 1px #000000;
+   padding: 2px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+td.pagesTD
+   /*
+   @summary: Container for paging information
+   */
+{
+   text-align: center;
+}
+
+td.projData
+   /*
+   @summary: Contains projection metadata
+   */
+{
+   padding: 10px;
+   vertical-align: top;
+}
+
+td.projImg
+   /*
+   @summary: Container for a projection WMS image
+   */
+{
+   padding: 10px;
+   vertical-align: top;
+}
+
+td.queryFilters
+{
+   padding: 5px;
+}
+
+/* Table Header Elements                                                     */
+/* -----------------------------                                             */
+th.itemListTh
+   /*
+   @summary: Table header for list items (id, modification time, title)
+   */
+{
+   border: solid 1px #000000;
+   font-weight: bold;
+   padding: 5px;
+}
+
+th.occSetPointsHeader
+   /*
+   @summary: Header for column in occurrence set points table
+   */
+{
+   border: solid 1px #000000;
+   font-weight: bold;
+   padding: 5px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+
+/* Table Row Elements                                                        */
+/* -----------------------------                                             */
+tr.expPrjEvenRow
+   /*
+   @summary: Even numbered row in the table containing an experiment's 
+                projections
+   */
+{
+   background-color: #eeeeee;
+   border: solid 1px #000000;
+}
+
+tr.expPrjOddRow
+   /*
+   @summary: Odd numbered row in the table containing an experiment's 
+                projections
+   */
+{
+   background-color: #eeeeff;
+   border: solid 1px #000000;
+}
+
+tr.occSetPointsOddRow
+   /*
+   @summary: Table row for occurrence set points
+   */
+{
+   background-color: #eeeeee;
+}
+
+/* ------------------------------------------------------------------------- */
+

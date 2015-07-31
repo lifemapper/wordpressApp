@@ -1,0 +1,98 @@
+﻿body {border:0px;margin:0px;background-position:center top;background-repeat:no-repeat;font-family:Myrid Pro, Verdana, Arial, Helvetica, Sans-Serif; background-attachment:scroll;background-color:#819abd;}
+img {border:0px;}
+h4 {color:#1a375b;padding:0px;margin:0px;font-stretch:extra-expanded;}
+ul {padding-left:1.5em;margin:0px;}
+#header-links ul {list-style:none;margin:0px;padding:0px;}
+#header-links ul li {display:inline-block;vertical-align:top;text-align:center;width:90px;line-height:20px;}
+#header-links ul li a {text-decoration:none;color:#39587c;}
+#header-links li.swoosh-link {background-image:url(../images/nav_decor.png);background-attachment:scroll;background-repeat:no-repeat;background-position:center bottom;}
+#copyright {color:White;}
+#map-shadow {background-color:#1a375b;}
+#map-container {background-color:#003366;}
+#map-canvas {height:100%;width:100%;}
+#page-toolbar {
+    background-color:#A1BDDB;
+    -moz-box-shadow: 0 1px 3px black; 	 
+    -webkit-box-shadow: 0 1px 3px black; 	 
+    box-shadow: 0 1px 3px black;
+    height: 44px;
+}
+#page-links a.button {padding-left:25px;}
+#page-links img {cursor:pointer;}
+#download-container {background-color:#003366;border:1px solid #99ccff;color:#99ccff;}
+#download-container div.label {padding:5px;}
+#download-container a {color:White;text-decoration:none;}
+.tabpage {display:none;}
+.ui-widget-content {background-color:transparent;background-image:url(../images/dialog_background.png);background-repeat:repeat;}
+.search_result {white-space:nowrap;overflow:auto;max-height:350px;}
+.search_result div {cursor:pointer;}
+.search_result .p:before {content:" (";}
+.search_result .p:after {content:", ";}
+.search_result .m:after {content:")";}
+.step-label {color:#194168;font-weight:bolder;margin-top:11px;margin-bottom:5px;}
+.unselected {vertical-align:middle;background-repeat:no-repeat;background-image:url(../images/unselected.gif);}
+.selected {vertical-align:middle;background-repeat:no-repeat;background-image:url(../images/selected.gif);}
+.hinted {color:#999999;}
+#create-experiment label {display:inline-block;text-align:right;}
+.scenario_list {overflow:auto;}
+.ge_button {display:none;}
+#alertbox {position:fixed;top:0px;left:0px;height:100%;right:0px;bottom:0px;display:none;background-image:url(../images/modalbackground.png);z-index:2000;}
+.alertmessage {position:absolute;left:50%;top:50%;border:1px solid black;background-color:White;overflow:auto;display:none;}
+
+.scenario_list ul {padding:0px;margin-top:10px;}
+
+.scenario_list li {background-repeat:no-repeat;background-position:0px, 0px;padding:0px;padding-left:25px;list-style:none;margin-left:0px;margin-top:5px;}
+
+.scenario_list .error {color:Red;}
+.scenario_list .initialized {color:#489721;background-image:url(./images/initialize_icon.png);}
+.scenario_list .running {color:#d28613;background-image:url(./images/processing_icon.png);}
+.scenario_list .completed {color:#024cd2;background-image:url(./images/unselected_radio.gif);}
+.scenario_list .selected {color:#024cd2;background-image:url(./images/selected_radio.gif);}
+
+#climate-map {background-color:White;}
+.map-image-container {border:1px solid black;overflow:hidden;}
+
+#climate-selection {background-color:White;}
+#climate-selection .title {font-size:larger;text-align:center;color:#194168;font-weight:bolder;}
+#climate-selection .criteria-label {color:#194168;font-weight:bolder;}
+.scenario-list-container {color:#194168;font-weight:bolder;}
+.scenario-list-container .detail div {padding-left:25px;margin-top:6px;min-height:20px;background-image:url(../images/unselected_radio.gif);background-repeat:no-repeat;font-size:smaller;cursor:pointer;}
+.scenario-list-container .detail div.selected {background-image:url(../images/selected_radio.gif);}
+
+.ui-dialog .ui-dialog-titlebar {background-image:none;background-color:#194168;font:18pt Helvetic Bold;color:#fff;padding:0px;padding-left:1em;}
+#climate-selection select {width:250px;}
+
+.help-button {cursor:pointer;}
+#climate-help-button {position:absolute;top:23px;left:270px;}
+#scenario-help-button {position:absolute;top:68px;left:270px;}
+.run_model_button {position:relative;left:50%;margin-left:-57px;}
+
+.file_name {display:block;height:21px;}
+.create_choose_species_help_button {position:absolute;left:270px;}
+.create_choose_algorithm_help_button {position:absolute;left:270px;}
+.create_choose_environmental_set_help_button {position:absolute;left:270px;}
+.email_help_button {margin-left:4px;}
+
+#create-experiment input.email[type=text] {width:195px;}
+.email_container {margin-top:10px;}
+.species_toolbar {position:relative;top:-13px;left:220px;width:70px;}
+#btnUpload {background-image:url(./images/upload.png);background-repeat:no-repeat;background-position:2px, 2px;}
+#btnUpload[disabled=disabled] {background-color:#333333;}
+
+.help-text {position:absolute;font-size:12pt;color:#891010;}
+.how-to-dialog {display:none;}
+#how-to-create-experiment .help-text {top:20px;left:350px;width:300px;}
+#how-to-create-experiment .arrow-01 {position:absolute;top:40px;left:240px;}
+
+#how-to-explore-archive .help-text {top:40px;left:350px;width:300px;}
+#how-to-explore-archive .arrow-01 {position:absolute;top:50px;left:80px;}
+
+#how-to-explore-climate-layer .help-text {top:20px;left:350px;width:300px;}
+#how-to-explore-climate-layer .arrow-01 {position:absolute;top:40px;left:240px;}
+#how-to-explore-climate-layer .arrow-02 {position:absolute;top:90px;left:240px;}
+
+
+.help-section-text {height:95px;}
+
+.create-input {position:absolute;left:0px;width:290px;}
+.create_content {height:500px;}

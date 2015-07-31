@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+   font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;
+}
+
+p, h1, form, button {
+   border:0; 
+   margin:0; 
+   padding:0;
+}
+
+.spacer {
+   clear:both; 
+}
+
+.myform {
+   margin:0 auto;
+   width:580px;
+   height:190px;
+   padding:5px;
+   background-image:url(background.png) ;
+}
+
+/* ----------- stylized ----------- */
+#stylized {
+   background-color:#E9F0FF;
+}
+
+#stylized h1 {
+   font-size:14px;
+   font-weight:bold;
+   margin-bottom:15px;
+   margin-top:15px;
+   text-align:center;
+   color:#113E6A;
+}
+
+#stylized p {
+   font-size:11px;
+   color:#fff;
+   text-align:center;
+}
+
+#stylized label {
+   font-weight:bold;
+   text-align:right;
+   float:left;
+   width:230px;
+   padding:4px 2px;
+   margin:2px 12px 6px 0px;
+   line-height:14px;
+   vertical-align:bottom;
+}
+
+#stylized select {
+   display:block;
+   float:left;
+   margin-left: 1em;
+   height:18px;
+}
+
+#stylized select select {
+   margin-left: 9em;
+   float:none;
+}
+
+#stylized .small {
+   color:#666666;
+   display:block;
+   font-size:11px;
+   font-weight:normal;
+   text-align:right;
+   width:140px;
+}
+
+#stylized input {
+   font-size:12px;
+   line-height:14px;
+   float:left;
+   margin-left: 1em;
+   vertical-align:middle;
+}
+
+.button {
+   float:right;
+   margin-right:220px;
+}
+
+
+
+	
+	
