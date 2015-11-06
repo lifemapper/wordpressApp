@@ -7,7 +7,7 @@ $ini = parse_ini_file("config.ini");
 
 /* Configuration Constants */
 /*
-define('URL_BASE', '/~lifemapper/blog/');
+define('URL_BASE', '/');
 define('PLUGIN_DIR', URL_BASE . 'wp-content/plugins/lifemapper-app/');
 define('IMAGE_DIR', URL_BASE . 'wp-includes/images/');
 define('THEME_DIR', URL_BASE . 'wp-content/themes/lifemapper/');
