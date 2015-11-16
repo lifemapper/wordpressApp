@@ -22,7 +22,8 @@ include 'lifemapper-config.php';
 $lmConstants = array(
    'pluginDir' => PLUGIN_DIR,
    'urlBase' => URL_BASE,
-   'webServicesRoot' => WEBSERVICES_ROOT
+   'webServicesRoot' => WEBSERVICES_ROOT,
+	'websiteRoot' => WEBSITE_ROOT
 );
 
 function lm_page()

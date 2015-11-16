@@ -18,4 +18,5 @@ define('PLUGIN_DIR', URL_BASE . $ini['PLUGIN_DIR']);
 define('IMAGE_DIR', URL_BASE . $ini['IMAGE_DIR']);
 define('THEME_DIR', URL_BASE . $ini['THEME_DIR']);
 define('WEBSERVICES_ROOT', $ini['WEBSERVICES_ROOT']);
+define('WEBSITE_ROOT', $ini['WEBSITE_ROOT']);
 ?>

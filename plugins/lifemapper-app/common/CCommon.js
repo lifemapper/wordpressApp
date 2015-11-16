@@ -120,6 +120,8 @@ function CLocalUrlManager() {
 function CLiveUrlManager(domain) {
     //var root = "http://" + domain;
     var root = lmConstants.webServicesRoot;
+    var websiteRoot = lmConstants.websiteRoot;
+    
     this.getAlgorithmUrl = function () {
         return root + "/javascript/algorithms.json";
     }
@@ -157,7 +159,7 @@ function CLiveUrlManager(domain) {
         return root + "/services/sdm/occurrences/xml";
     }
     this.getPermalink = function (speciesName) {
-	  return (root + "/species/[item]").replace("[item]", escape(speciesName));
+	  return (websiteRoot + "/species/[item]").replace("[item]", escape(speciesName));
     }
 
     this.getSpeciesName = function () {
