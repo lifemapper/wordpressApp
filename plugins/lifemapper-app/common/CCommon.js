@@ -150,7 +150,7 @@ function CLiveUrlManager(domain) {
         return root + "/services/sdm/scenarios/" + id + "/json";
     }
     this.getSpeciesListByPrefixUrl = function (prefix) {
-        return root + "/hint/species/" + prefix + "?format=json&columns=1&maxreturned=10000";
+        return root + "/hint/species/" + prefix + "?format=newjson&columns=1&maxreturned=10000";
     }
     this.getSpeciesKMLUrl = function (occurrenceSet) {
         return root + "/services/sdm/occurrences/" + occurrenceSet + "/kml";

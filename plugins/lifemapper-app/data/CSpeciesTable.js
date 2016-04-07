@@ -36,8 +36,8 @@
             var url = urlManager.getSpeciesListByPrefixUrl(prefix);
             var manager = this;
             $.getJSON(url, function (data, textStatus, jqXHR) {
-                $(data.columns[0]).each(function (i, d) { NormalizeData(d); });
-                retVal = new CSpeciesList(data.columns[0]);
+                $(data.hits).each(function (i, d) { NormalizeData(d); });
+                retVal = new CSpeciesList(data.hits);
                 cacheManager.SetCache("SL", prefix, retVal);
                 callback(retVal, prefix, textStatus, jqXHR);
             }).error(function () {
