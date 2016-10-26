@@ -16,7 +16,7 @@ $(function () {
         }
     });
     //****************Installing Dialogs*************************
-    existingPageDialog = new CDialogWithHelp("#species-archive", { width: 350, minWidth: 330, minHeight: 420, height: 420 }, "#how-to-explore-archive", { minWidth: 680, height: 560 });
+    existingPageDialog = new CDialogWithHelp("#species-archive", { width: 800, minWidth: 330, minHeight: 420, height: 600 }, "#how-to-explore-archive", { minWidth: 680, height: 560 });
     $(".species-archive-button").click(pageDialogGroup.CreateOpener(existingPageDialog));
 
     climateLayersDialog = new CDialogWithHelp(".non-dialog", { width: 320, height: 600 }, "#how-to-explore-climate-layer", { width: 650, height: 440 });
