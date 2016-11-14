@@ -144,7 +144,8 @@ function COccurrenceSetUploader(containerID) {
             fileType = ""; //we are temporarily not allowing XML files
             break;
          case "zip":
-            fileType = "SHAPEFILE";
+            //fileType = "SHAPEFILE";
+            fileType = ""; // we are temporarily not allowing shapefile uploads
             break;
          default:
             fileType = "";

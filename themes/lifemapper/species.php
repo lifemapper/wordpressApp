@@ -113,7 +113,7 @@ lm_species_page();
                   <div id="create_upload_page" class="tabpage">
                      <form id="frmUpload" action="" enctype="multipart/form-data" method="post">
                         <div id="upload-message">
-                           Lifemapper can accept occurrences as csv and zipped shapefiles based on the Geographic Coordinate System (Lat/Long).
+                           Lifemapper can accept occurrences as csv based on the Geographic Coordinate System (Lat/Long).
                         </div>
                         <input type="hidden" class="upload_name" name="displayName" /><br />
                         <input type="hidden" class="epsg_code" name="epsgCode" value="4326" />
@@ -587,7 +587,7 @@ lm_species_page();
                   </div>
                </div>
                <div id="create-import-file-message" class="alert-message" title="Import Species File">
-                  We can accept points as either a CSV or shapefile formats. Shapefile must be zipped into a single zip file.<br />
+                  We can accept points as either a CSV format. <!-- or shapefile formats. Shapefile must be zipped into a single zip file.--><br />
                   <br />
                     
                   If you wish to upload points in CSV format, it is strongly recommended that you
@@ -854,12 +854,12 @@ lm_species_page();
                   </div>
                </div>
                <div id="upload-error-message" class="alert-message" title="Upload Error">
-                  Please choose a CSV<br/>zipped shapefile to upload.<br/>
+                  Please choose a CSV<br/><!--zipped shapefile--> to upload.<br/>
                   <img class="hover-button upload-error-message-close" src="<?php echo PLUGIN_DIR ?>images/ok.png?v=3.9" alt="OK"/>
                </div>
                <div id="upload-bad-file-message" class="alert-message" title="Upload Error">
                   There was an error uploading your file.<br/>
-                  Please use a csv or zipped shapefile.
+                  Please use a csv.<!-- or zipped shapefile.-->
                   <br/><br/>
                   <img class="hover-button upload-bad-file-message-close" src="<?php echo PLUGIN_DIR ?>images/ok.png?v=3.9" alt="OK"/>
                   <img class="create-import-file-button help-button upload-bad-file-message-help" id="error-create-choose-species-button" src="<?php echo PLUGIN_DIR ?>images/help_button.png?v=3.9" alt="Help" />
